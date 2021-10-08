@@ -1,0 +1,60 @@
+@import url("../src/assets/fonts/kanit/font.css");
+// bootstrap override classes here
+$green: #88D317;
+$btn-border-radius: 0rem;
+$card-border-radius: 0rem;
+$input-border-radius: 0rem;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body {
+    font-family: "kanit", sans-serif !important;
+}
+
+.sidebar {
+    height: 100%;
+    width: 224px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $green;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    h6 {
+        padding: 2px 8px 2px 20px;
+        margin-top: 8px;
+        color: #495057;
+    }
+    a {
+        padding: 2px 8px 2px 30px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #495057;
+        display: block;
+        transition: 0.3s;
+        
+        &:hover {
+            color: #212529;
+        }
+    }
+    .non-group {
+        padding-left: 20px !important;
+    }
+}
+
+.main {
+    transition: margin-left 0.5s;
+    padding: 0px 16px 16px 6px;
+    margin-left: 224px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+}
