@@ -1,5 +1,8 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "cli": {
+      "analytics": "bf76b5be-3be9-4023-b66d-64f4ce0f0bb9"
+    },
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
@@ -48,6 +51,7 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "node_modules/boxicons/css/boxicons.min.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
@@ -124,19 +128,6 @@
                             "src/styles.scss"
                         ],
                         "scripts": []
-                    }
-                },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": [
-                            "tsconfig.app.json",
-                            "tsconfig.spec.json",
-                            "e2e/tsconfig.json"
-                        ],
-                        "exclude": [
-                            "**/node_modules/**"
-                        ]
                     }
                 },
                 "e2e": {
